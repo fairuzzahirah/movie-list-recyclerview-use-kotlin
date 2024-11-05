@@ -14,14 +14,13 @@ class MovieAdapter constructor(
     private val getActivity: MainActivity,
     private val movieList: List<Movie>) :
 
-
     RecyclerView.Adapter<MovieAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_movie_list_item, parent, false)
-            return MyViewHolder(view)
+        return MyViewHolder(view)
     }
 
     override fun onBindViewHolder(
